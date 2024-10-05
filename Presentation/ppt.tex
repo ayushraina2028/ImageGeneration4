@@ -1,0 +1,62 @@
+\documentclass{beamer}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+
+% other packages
+\usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
+\usepackage{graphicx,pstricks,listings,stackengine}
+
+% dummy text; remove it when working on this template
+\usepackage{lipsum}
+
+
+\author{Ayush Raina}
+\title{Denoising Diffusion Probabilistic Models (DDPM's)}
+\subtitle{(Maths + Implementation)}
+\institute{
+    Indian Institute of Science \\
+}
+\date{\today}
+\usepackage{Ritsumeikan} 
+
+
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{RGB}{153,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{deepred},    % Custom highlighting style
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=shadowbox,
+}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+    
+\include{background.tex}
+\include{vae.tex}
+\include{mhvae.tex}
+\include{vdm.tex}
+\include{implementation.tex}
+
+% thank you slide
+\begin{frame}{Thank You!}
+    \begin{center}
+        \Huge Thank You!
+    \end{center}
+\end{frame}
+
+\end{document}
+

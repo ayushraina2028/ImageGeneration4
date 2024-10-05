@@ -1,0 +1,51 @@
+\section*{Background}
+
+\begin{frame}{ELBO - Evidance Lower Bound}
+    \begin{enumerate}
+        \item Evidence - Log Likelihood of observed data - $log (p(x))$ where $x \in \mathbb{R}^d$
+        \item Evidance Lower Bound (ELBO) - Lower bound on the log likelihood of observed data - $log(p(x)) \geq ELBO$
+    \end{enumerate}
+
+    \[ \boxed{ELBO = \mathbb{E}_{q(z|x)}[log(\frac{p(x,z)}{q(z|x)})]} \]
+    So let us see why ELBO is a lower bound on the log likelihood of observed data.
+\end{frame}
+
+\begin{frame}{Proof 1}
+    We start with \( \log(p(x)) \), where \( z \) is the latent variable:
+
+    \begin{align*}
+        \log(p(x)) &= \log\left(\sum_z p(x, z)\right) && \text{(starting point)} \\
+        &= \log\left(\sum_z \frac{p(x, z)}{q(z \mid x)} q(z \mid x)\right) && \text{(multiply and divide by \( q(z \mid x) \))} \\
+        &= \log\left(\mathbb{E}_{q(z \mid x)}\left[\frac{p(x, z)}{q(z \mid x)}\right]\right) \\
+        &\geq \mathbb{E}_{q(z \mid x)}\left[\log\left(\frac{p(x, z)}{q(z \mid x)}\right)\right] && \text{(Jensen's inequality)} \\
+    \end{align*}
+
+    We can use Jensen inequality because \( \log \) is a concave function.
+\end{frame}
+
+\begin{frame}{Proof 2}
+    \begin{align*}
+        \log(p(x)) &= \log(p(x)) \left( \sum_z q(z | x) \right) && \text{(starting point)} \\
+        &= \sum_z q(z | x) \log(p(x)) && \text{} \\
+        &= \mathbb{E}_{q(z|x)} \log\left( p(x) \right) && \text{} \\
+        &= \mathbb{E}_{q(z|x)} \log\left( \frac{p(x)p(z|x)}{p(z|x)} \right) && \text{} \\
+        &= \mathbb{E}_{q(z|x)} \left[ \log\left( \frac{p(x,z)}{p(z|x)} \right) \right] && \text{} \\
+    \end{align*}
+\end{frame}
+
+\begin{frame}{Proof 2 Continued}
+    \begin{align*}
+        &= \mathbb{E}_{q(z|x)} \left[ \log\left( \frac{p(x,z)}{\textcolor{red}{q}(z|x)} \frac{\textcolor{red}{q}(z|x)}{p(z|x)} \right) \right] && \text{} \\
+        &= \mathbb{E}_{q(z|x)} \left[ \log\left( \frac{p(x,z)}{\textcolor{red}{q}(z|x)} \right) + \log\left( \frac{\textcolor{red}{q}(z|x)}{p(z|x)} \right) \right] && \text{} \\
+        &= \mathbb{E}_{q(z|x)} \left[ \log\left( \frac{p(x,z)}{\textcolor{red}{q}(z|x)} \right) \right] + \mathbb{E}_{q(z|x)} \left[ \log\left( \frac{\textcolor{red}{q}(z|x)}{p(z|x)} \right) \right] && \text{} \\
+        &= ELBO + KL(\textcolor{red}{q}(z|x) || p(z|x)) && \text{} \\
+    \end{align*}
+
+    Since $KL(\textcolor{red}{q}(z|x) || p(z|x)) \geq 0$, we have $\log(p(x)) \geq ELBO$.
+\end{frame}
+
+\begin{frame}
+    Now we know that 
+    \[ \boxed{\log(p(x)) = \mathbb{E}_{q(z|x)} \left[ \log\left( \frac{p(x,z)}{q(z|x)} \right) \right] + KL(q(z|x) || p(z|x))} \]
+    and due to the KL divergence term on the right hand side, we can say that ELBO is a lower bound on the log likelihood of observed data.
+\end{frame}
