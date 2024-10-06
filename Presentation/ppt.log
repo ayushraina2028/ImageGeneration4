@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.29)  4 OCT 2024 23:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.29)  6 OCT 2024 03:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/ayushraina/Desktop/5thSemester/ADRL/Generative Models/Diffusion Models/Presentation/ppt.tex"
-(/home/ayushraina/Desktop/5thSemester/ADRL/Generative Models/Diffusion Models/Presentation/ppt.tex
+**"/home/ayushraina/Desktop/5thSemester/AI/Generative Models/Diffusion Models/Presentation/ppt.tex"
+(/home/ayushraina/Desktop/5thSemester/AI/Generative Models/Diffusion Models/Presentation/ppt.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2022/01/21 v3.65 A class for typesetting presentations
@@ -756,27 +756,36 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \g__lipsum_par_int=\count383
 \l__lipsum_a_int=\count384
 \l__lipsum_b_int=\count385
- (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (./Ritsumeikan.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesmoothbars.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemecircles.sty)) (./ppt.aux (./background.aux) (./vae.aux) (./mhvae.aux) (./vdm.aux) (./implementation.aux))
+ (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (./Ritsumeikan.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesmoothbars.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemecircles.sty))
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 41.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 41.
+
+(./ppt.aux (./background.aux) (./vae.aux) (./mhvae.aux) (./vdm.aux))
 \openout1 = `ppt.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -831,7 +840,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 42.
+Package hyperref Info: Link coloring OFF on input line 41.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -841,66 +850,66 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count392
 )
-LaTeX Info: Redefining \ref on input line 42.
-LaTeX Info: Redefining \pageref on input line 42.
-LaTeX Info: Redefining \nameref on input line 42.
+LaTeX Info: Redefining \ref on input line 41.
+LaTeX Info: Redefining \pageref on input line 41.
+LaTeX Info: Redefining \nameref on input line 41.
  (./ppt.out) (./ppt.out)
 \@outlinefile=\write5
 \openout5 = `ppt.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 42.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 41.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 42.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 41.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 42.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 42.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 41.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 42.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 42.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 42.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 41.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 42.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 42.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 42.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 41.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 42.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 42.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 42.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 41.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 42.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 42.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 41.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 42.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 41.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 42.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 42.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 42.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 42.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 42.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 42.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 42.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 41.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 41.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 42.
+(Font)              `pureletters' in the math version `normal' on input line 41.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 42.
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 41.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 42.
+(Font)              `pureletters' in the math version `bold' on input line 41.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 42.
+(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 41.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 42.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 41.
  (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -915,7 +924,23 @@ Dictionary: translator-numbers-dictionary, Language: English
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 \c@lstlisting=\count393
- (./ppt.nav) [1
+ (./ppt.nav)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 41.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 41.
+ (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
+) [1
 Non-PDF special ignored!
 <special> header=pstricks.pro
 Non-PDF special ignored!
@@ -938,23 +963,7 @@ Non-PDF special ignored!
 ]
 \openout2 = `background.aux'.
 
- (./background.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 11.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 11.
- (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-) [2
+ (./background.tex [2
 
 
 ]
@@ -974,7 +983,7 @@ Overfull \hbox (31.90076pt too wide) detected at line 24
 \openout2 = `vae.aux'.
 
  (./vae.tex
-<Images/vae1.png, id=488, 415.5525pt x 309.155pt>
+<Images/vae1.png, id=527, 415.5525pt x 309.155pt>
 File: Images/vae1.png Graphic file (type png)
 <use Images/vae1.png>
 Package pdftex.def Info: Images/vae1.png  used on input line 13.
@@ -1000,7 +1009,7 @@ Package pdftex.def Info: Images/vae1.png  used on input line 13.
 \openout2 = `mhvae.aux'.
 
  (./mhvae.tex
-<Images/hvae1.png, id=919, 1215.54124pt x 398.48875pt>
+<Images/hvae1.png, id=993, 1215.54124pt x 398.48875pt>
 File: Images/hvae1.png Graphic file (type png)
 <use Images/hvae1.png>
 Package pdftex.def Info: Images/hvae1.png  used on input line 10.
@@ -1032,7 +1041,7 @@ Overfull \hbox (11.13507pt too wide) detected at line 38
 
 
 ]
-<Images/vdm1.png, id=1286, 1181.41376pt x 479.7925pt>
+<Images/vdm1.png, id=1390, 1181.41376pt x 479.7925pt>
 File: Images/vdm1.png Graphic file (type png)
 <use Images/vdm1.png>
 Package pdftex.def Info: Images/vdm1.png  used on input line 19.
@@ -1062,17 +1071,28 @@ Overfull \hbox (34.87376pt too wide) detected at line 117
 
 [29
 
-])
-\openout2 = `implementation.aux'.
+] [30
 
- (./implementation.tex [30
+] [31
+
+] [32
+
+]
+Overfull \hbox (29.49817pt too wide) detected at line 170
+[]
+ []
+
+[33
+
+] [34
+
+] [35
+
+]) [36
 
 
 
-
-]) [31
-
-
+] [37
 
 ]
 \tf@nav=\write6
@@ -1084,23 +1104,23 @@ Overfull \hbox (34.87376pt too wide) detected at line 117
 \tf@snm=\write8
 \openout8 = `ppt.snm'.
 
- (./ppt.aux (./background.aux) (./vae.aux) (./mhvae.aux) (./vdm.aux) (./implementation.aux))
+ (./ppt.aux (./background.aux) (./vae.aux) (./mhvae.aux) (./vdm.aux))
 Package rerunfilecheck Info: File `ppt.out' has not changed.
-(rerunfilecheck)             Checksum: 27D0CA1CF2C47410B08B23B7BCDAD031;420.
+(rerunfilecheck)             Checksum: 64AF359423187F36C34148AAC1E5E8B1;307.
  ) 
 Here is how much of TeX's memory you used:
- 26525 strings out of 478287
- 502188 string characters out of 5849289
- 898377 words of memory out of 5000000
- 44055 multiletter control sequences out of 15000+600000
- 484091 words of font info for 68 fonts, out of 8000000 for 9000
+ 26533 strings out of 478287
+ 501619 string characters out of 5849289
+ 904364 words of memory out of 5000000
+ 44054 multiletter control sequences out of 15000+600000
+ 489593 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,20n,122p,496b,823s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/ayushraina/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss2488.600pk> </home/ayushraina/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1000.600pk> </home/ayushraina/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1200.600pk> </home/ayushraina/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0800.600pk> </home/ayushraina/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1095.600pk> </home/ayushraina/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1440.600pk> </home/ayushraina/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ppt.pdf (31 pages, 531854 bytes).
+ 128i,20n,122p,494b,823s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/ayushraina/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss2488.600pk> </home/ayushraina/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1000.600pk> </home/ayushraina/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1200.600pk> </home/ayushraina/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0800.600pk> </home/ayushraina/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1095.600pk> </home/ayushraina/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1440.600pk> </home/ayushraina/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on ppt.pdf (37 pages, 582699 bytes).
 PDF statistics:
- 2333 PDF objects out of 2487 (max. 8388607)
- 1974 compressed objects within 20 object streams
- 68 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2913 PDF objects out of 2984 (max. 8388607)
+ 2530 compressed objects within 26 object streams
+ 79 named destinations out of 1000 (max. 500000)
+ 120 words of extra memory for PDF output out of 10000 (max. 10000000)
 

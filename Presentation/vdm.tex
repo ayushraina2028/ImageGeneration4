@@ -84,7 +84,7 @@
 \begin{frame}{Breaking down ELBO}
     We further saw that ELBO for MHVAE can be written as:
     \begin{align*}
-        ELBO &= &= \mathbb{E}_{q(z_{1:T}|x)} \left[ \log \left( \frac{p(z_T)p(x|z_1) \prod_{t=2}^{T} p(z_{t-1}|z_t)}{q(z_1|x) \prod_{t=2}^{T} q(z_t|z_{t+1})} \right) \right] \\
+        ELBO &= &= \mathbb{E}_{q(z_{1:T}|x)} \left[ \log \left( \frac{p(z_T)p(x|z_1) \prod_{t=2}^{T} p(z_{t-1}|z_t)}{q(z_1|x) \prod_{t=2}^{T} q(z_t|z_{t-1})} \right) \right] \\
     \end{align*}
 
     In our case we can write this as:
@@ -114,4 +114,77 @@
     \begin{align*}
         &= \mathbb{E}_{q(x_{1:T}|x_0)} \left[ \log \left( \frac{p(x_T)}{q(x_T|x_{T-1})} \right) \right] + \mathbb{E}_{q(x_{1:T}|x_0)} \left[ \log \left( p(x_0|x_1) \right) \right] \\
     \end{align*}
+\end{frame}
+
+\begin{frame}{Reconstruction Term}
+    We got 3 terms:
+    \begin{enumerate}
+        \item $\mathbb{E}_{q(x_{1:T}|x_0)} \left[ \log \left( p(x_0|x_1) \right) \right]$
+    \end{enumerate}
+    \bigskip
+    Since inside expression is independent of $x_{2:T}$, we can write this as:
+    \begin{align*}
+        &= \mathbb{E}_{q(x_{1}|x_0)} \left[ \log \left( p(x_0|x_1) \right) \right] && \text{(\textcolor{red}{reconstruction term})}
+    \end{align*}
+
+    maximizing ELBO results in maximizing this term which is log likelihood of getting back original data sample from latent variable at first time step.
+\end{frame}
+
+\begin{frame}{Prior Matching Term}
+    \begin{enumerate}
+        \setcounter{enumi}{1}   
+        \item $\mathbb{E}_{q(x_{1:T}|x_0)} \left[ \log \left( \frac{p(x_T)}{q(x_T|x_{T-1})} \right) \right]$
+    \end{enumerate}
+    We can simplify this expression as follows:
+    \begin{align*}
+        &= \mathbb{E}_{q(x_{T-1,T}|x_{0})} \left[ \log \left( \frac{p(x_T)}{q(x_T|x_{T-1})} \right) \right] \\
+        &= \int q(x_{T-1,T}|x_{0}) \log \left( \frac{p(x_T)}{q(x_T|x_{T-1})} \right) dx_{T-1} dx_T \\
+        &= \int q(x_{T-1}|x_{0}) \left[ q(x_T|x_{T-1}) \log \left( \frac{p(x_T)}{q(x_T|x_{T-1})} \right) dx_T \right] dx_{T-1} \\
+        &= -\int q(x_{T-1}|x_{0}) D_{KL} \left( q(x_T|x_{T-1}) || p(x_T) \right) dx_{T-1} \\
+        &= -\mathbb{E}_{q(x_{T-1}|x_{0})} \left[ D_{KL} \left( q(x_T|x_{T-1}) || p(x_T) \right) \right] 
+    \end{align*} 
+\end{frame}
+
+\begin{frame}{Prior Matching Term}
+    \begin{align*}
+        &= -\mathbb{E}_{q(x_{T-1}|x_{0})} \left[ D_{KL} \left( q(x_T|x_{T-1}) || p(x_T) \right) \right] 
+    \end{align*} 
+
+    This is \textcolor{red}{prior matching term}, maximizing ELBO results in minimizing this term, which forces the distribution of latent variable at last time as close as possible to $p(x_T) \sim \mathcal{N}(0, \mathbb{I}_{d \times d})$.
+\end{frame}
+
+\begin{frame}{Consistency Term}
+    \begin{enumerate}
+        \setcounter{enumi}{2}
+        \item $\mathbb{E}_{q(x_{1:T}|x_0)} \left[ \log \left( \frac{p(x_{t}|x_{t+1})}{q(x_t|x_{t-1})} \right) \right]$
+    \end{enumerate}
+
+    This term can be simplified as:
+    \begin{align*}
+        &= \mathbb{E}_{q(x_{t-1,t,t+1}|x_{0})} \left[ \log \left( \frac{p(x_{t}|x_{t+1})}{q(x_t|x_{t-1})} \right) \right] \\
+        &= \int q(x_{t-1,t,t+1}|x_{0}) \log \left( \frac{p(x_{t}|x_{t+1})}{q(x_t|x_{t-1})} \right) dx_{t-1} dx_t dx_{t+1} \\
+        &= \int q(x_{t+1}|x_{0}) q(x_{t-1}|x_{t+1}) \left[ q(x_{t}|x_{t-1}) \log \left( \frac{p(x_{t}|x_{t+1})}{q(x_t|x_{t-1})} \right) dx_t \right] dx_{t-1,t+1} \\
+        &= -\int q(x_{t+1}|x_{0}) q(x_{t-1}|x_{t+1}) D_{KL} \left( q(x_t|x_{t-1}) || p(x_t|x_{t+1}) \right) dx_{t-1,t+1} \\
+        &= -\mathbb{E}_{q(x_{t+1}|x_{0}) q(x_{t-1}|x_{t+1})} \left[ D_{KL} \left( q(x_t|x_{t-1}) || p(x_t|x_{t+1}) \right) \right]
+    \end{align*}
+\end{frame}
+
+\begin{frame}{Consistency Term}
+    \begin{align*}
+        &= -\mathbb{E}_{q(x_{t-1,t+1}|x_{0})} \left[ D_{KL} \left( q(x_t|x_{t-1}) || p(x_t|x_{t+1}) \right) \right]
+    \end{align*}
+
+    This is \textcolor{red}{consistency term}, maximizing ELBO results in minimizing this term, which ensures that distribution of noised image at time step $t$ i.e $q(x_t|x_{t-1})$ is as close as possible to distribution of denoised image at time step $t$ i.e $p(x_t|x_{t+1})$.
+    
+\end{frame}
+
+\begin{frame}{ELBO}
+    Finally we saw that ELBO = reconstruction term + prior matching term + consistency term where:
+    \begin{enumerate}
+        \item Reconstruction term $\mathbb{E}_{q(x_{1}|x_0)} \left[ \log \left( p(x_0|x_1) \right) \right]$
+        \item Prior Matching term $-\mathbb{E}_{q(x_{T-1}|x_{0})} \left[ D_{KL} \left( q(x_T|x_{T-1}) || p(x_T) \right) \right]$
+        \item Consistency term $-\mathbb{E}_{q(x_{t-1,t+1}|x_{0})} \left[ D_{KL} \left( q(x_t|x_{t-1}) || p(x_t|x_{t+1}) \right) \right]$
+    \end{enumerate}
+    \bigskip
+    \textcolor{red}{maximizing ELBO results in minimizing prior matching term and consistency term and maximizing reconstruction term.}
 \end{frame}
